@@ -3,7 +3,7 @@ import qs from "qs";
 import { Message } from "element-ui";
 import Vue from 'vue';
 
-const apiUrl = "http://192.168.43.180:8888"
+const apiUrl = "http://49.234.32.134:8888"
 const fetch = axios.create();
 fetch.interceptors.response.use(
   response => {

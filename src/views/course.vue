@@ -278,7 +278,7 @@ export default {
                         } 
                         updateCourse(this.course_form).then(res=>{
                             this.$message.success("新增成功");
-                            // this.getcourseList();
+                            this.getCourseList();
                             this.addPrimarymenuVisible = false;
                         })
                        
@@ -288,10 +288,10 @@ export default {
                             this.getCourseList();
                             this.addPrimarymenuVisible = false;
                         })
-                    }
+                    } 
                     
                 } else {
-                    return false;
+                    return false; 
                 }
             });
         },
@@ -303,7 +303,7 @@ export default {
             }).then(() => {
                 delCourse({id: id}).then( res => {
                     this.$message.success("删除成功");
-                    this.getcourseList();
+                    this.getCourseList();
                 })
             }).catch(() => {
                 this.$message({

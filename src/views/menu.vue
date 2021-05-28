@@ -145,6 +145,7 @@ export default {
     methods: {
         getMenuList() {
             getMenuList({id:this.$route.query.id}).then( res => {
+                this.totalList = [];
                 this.pageTotal = res.length;
                 let temp = [];
                 for (let i = 0; i < res.length; i++) {
